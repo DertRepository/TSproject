@@ -1,0 +1,9 @@
+-Amt Balance if not pay take PO Amt
+-Add table know edit already or not.
+-Amt Balance minus all Amt Balance was bill
+-Amt Balance = Amt(PO) - PaymentHistoryAmt(PO)
+-Amt Balance De = Amt(De) + DeHistoryAmt(PO)
+-Need to lock after confirm line
+
+
+-Which contract deduction with PO

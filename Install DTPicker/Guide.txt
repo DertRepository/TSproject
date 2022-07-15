@@ -1,0 +1,5 @@
+1.Extract DTPicker to folder c:\windows\sysWOW64
+2.Run CMD as administrator type cmd as below or run Exec.bat
+
+cmd: "regsvr32 c:\windows\sysWOW64\MSCOMCT2.ocx"
+cmd: "regsvr32 c:\windows\sysWOW64\MSCOMCTL.ocx"

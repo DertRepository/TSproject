@@ -1,0 +1,17 @@
+- Status
+	Deleted : user can't Revised
+	Closed : user can't update (when account register JN and confirm)
+	Revised : -> user can calculate
+	Opened :
+
+- Journal Number
+
+- Create Column JN if Have JN Status CLosed.
+
+- Calculate on Contract AMT
+
+- Balance Contract
+
+- Add new form have paymentID -> Trans. Reference.
+
+- PAYMENT_ID check from LEN and then if PAYMENT_ID have pay it will close.
