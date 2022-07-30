@@ -11,4 +11,6 @@ Filter
 
 - Change Request ID to References
 
--
+- Update only Payment Information, Deduction Information
+
+- When PoBalance < 0 couldn't generate
