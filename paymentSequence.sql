@@ -13,4 +13,10 @@ CREATE TABLE [dbo].[PaymentSequence](
 ) ON [PRIMARY]
 GO
 
+TRUNCATE TABLE PaymentSequence;
+TRUNCATE TABLE PaymentInfo;
+TRUNCATE TABLE Contractinfo;
+
+SELECT * FROM Contractinfo;
+SELECT * FROM PaymentInfo;
 
