@@ -1,4 +1,22 @@
-USE [TrainingDB]
+USE Payment
+GO
+
+/****** Object:  Table [dbo].[Contractinfo]    Script Date: 15/08/2022 08:40:25 ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[Contractinfo](
+	[Con_Code] [nvarchar](50) NOT NULL,
+	[Con_Amt] [money] NULL,
+	[Con_Ref] [nvarchar](100) NULL,
+ CONSTRAINT [PK_Contractinfo] PRIMARY KEY CLUSTERED 
+(
+	[Con_Code] ASC
+)WITH (PAD_INDEX = OFF, STATISTICS_NORECOMPUTE = OFF, IGNORE_DUP_KEY = OFF, ALLOW_ROW_LOCKS = ON, ALLOW_PAGE_LOCKS = ON) ON [PRIMARY]
+) ON [PRIMARY]
 GO
 
 /****** Object:  Table [dbo].[PaymentInfo]    Script Date: 14.07.2022 2:07:22 PM ******/
@@ -47,4 +65,23 @@ GO
 ALTER TABLE [dbo].[PaymentInfo] ADD  DEFAULT (getdate()) FOR [Req_Create_Date]
 GO
 
+
+/****** Object:  Table [dbo].[PaymentSequence]    Script Date: 14.07.2022 2:09:37 PM ******/
+SET ANSI_NULLS ON
+GO
+
+SET QUOTED_IDENTIFIER ON
+GO
+
+CREATE TABLE [dbo].[PaymentSequence](
+	[PayIDIncrement] [nvarchar](50) NULL
+) ON [PRIMARY]
+GO
+
+TRUNCATE TABLE PaymentSequence;
+TRUNCATE TABLE PaymentInfo;
+TRUNCATE TABLE Contractinfo;
+
+SELECT * FROM Contractinfo;
+SELECT * FROM PaymentInfo;
 
